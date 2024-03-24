@@ -2,7 +2,7 @@ import React from 'react'
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import CapyIcon from '../images/capy.png';
+import CapyIcon from '/images/capy.png';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
