@@ -1,7 +1,7 @@
 import React from 'react'
 import Avatar from '/images/avatar.png'
-import PrimaryButton from './PrimaryButton'
-import SecondaryButton from './SecondaryButton'
+import PrimaryButton from './utils/PrimaryButton'
+import SecondaryButton from './utils/SecondaryButton'
 import { Link } from 'react-router-dom'
 
 const Hero = () => {

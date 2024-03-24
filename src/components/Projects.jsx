@@ -1,6 +1,6 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
-import PrimaryButton from "./PrimaryButton";
+import ProjectCard from "./utils/ProjectCard";
+import PrimaryButton from "./utils/PrimaryButton";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import projects from "../data.json";
 
