@@ -17,6 +17,16 @@ export default {
       colors: {
         'lightblue': '#00B2FF',
         'darkblue': '#0038FF'
+      },
+      keyframes: {
+        swipe: {
+          '0%': {transform: 'translateX(0rem)'},
+          '50%': {transform: 'translateX(0.5rem)'},
+          '100%': {transform: 'translateX(0rem)'}
+        }
+      },
+      animation: {
+        'swipe': 'swipe 0.5s ease 1',
       }
     },
   },

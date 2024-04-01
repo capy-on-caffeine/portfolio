@@ -2,32 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: "poppins-extrabold";
-    src: url("/fonts/poppins/Poppins-ExtraBold.ttf");
+@layer utilities {
+  .underline-text {
+    position: relative;
+    display: inline-block;
+  }
+  .underline-text::after {
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    margin: auto;
+    content: ".";
+    color: transparent;
+    background-color: #fff;
+    height: 2px;
+    width: 0;
+    transition: all 0.2s ease;
+  }
+
+  .underline-text:hover::after {
+    width: 100%;
+    transition: all 0.2s ease;
+  }
 }
 
 @font-face {
-    font-family: "poppins-light";
-    src: url("/fonts/poppins/Poppins-Light.ttf");
+  font-family: "poppins-extrabold";
+  src: url("/fonts/poppins/Poppins-ExtraBold.ttf");
 }
 
 @font-face {
-    font-family: "poppins-regular";
-    src: url("/fonts/poppins/Poppins-Regular.ttf");
+  font-family: "poppins-light";
+  src: url("/fonts/poppins/Poppins-Light.ttf");
 }
 
 @font-face {
-    font-family: "poppins-semibold";
-    src: url("/fonts/poppins/Poppins-SemiBold.ttf");
+  font-family: "poppins-regular";
+  src: url("/fonts/poppins/Poppins-Regular.ttf");
 }
 
 @font-face {
-    font-family: "jakarta-regular";
-    src: url("/fonts/jakarta/PlusJakartaSans-Regular.ttf");
+  font-family: "poppins-semibold";
+  src: url("/fonts/poppins/Poppins-SemiBold.ttf");
 }
 
 @font-face {
-    font-family: "jakarta-semibold";
-    src: url("/fonts/jakarta/PlusJakartaSans-SemiBold.ttf");
+  font-family: "jakarta-regular";
+  src: url("/fonts/jakarta/PlusJakartaSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "jakarta-semibold";
+  src: url("/fonts/jakarta/PlusJakartaSans-SemiBold.ttf");
 }
