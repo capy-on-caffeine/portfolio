@@ -13,8 +13,8 @@ const Contact = () => {
           <div className="relative text-3xl font-poppins-semibold mt-12 mb-6">
               Contact
           </div>
-          <div className="relative flex flex-row justify-center items-center w-full font-poppins-light">
-              <div className="relative flex-1 text-center">
+          <div className="relative flex flex-col lg:flex-row justify-center items-center w-full font-poppins-light">
+              <div className="relative flex-1 text-center mb-2 lg:mb-0">
                 <MailOutlinedIcon />
                 <a href='mailto:arnav.anand2004@gmail.com' className='pl-2 hover:text-lightblue transition-all hover:transition-all'>arnav.anand2004@gmail.com</a>
               </div>

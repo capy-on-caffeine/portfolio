@@ -2,8 +2,8 @@ import React from 'react'
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import MenuIcon from '@mui/icons-material/Menu';
 import CapyIcon from '/images/capy.png';
-import { Link } from 'react-router-dom';
 import Hyperlink from './utils/Hyperlink';
 import SocialIcon from './utils/SocialIcon';
 
@@ -14,7 +14,12 @@ const Navbar = () => {
             <img src={CapyIcon} className='relative inline-block w-8' />
             <span>capy-on-caffeine</span>
         </div>
-        <div className='relative flex flex-row flex-1 justify-center items-center'>
+        {/* <div className="lg:hidden">
+          <span className="relative items-center justify-center flex mr-6 cursor-pointer hover:text-gray-300 transition-all hover:transition-all">
+            <MenuIcon />
+          </span>
+        </div> */}
+        <div className='hidden relative lg:flex flex-row flex-1 justify-center items-center'>
             <Hyperlink to={'home'}>Home</Hyperlink>
             <Hyperlink to={'about'}>About</Hyperlink>
             <Hyperlink to={'projects'}>Projects</Hyperlink>

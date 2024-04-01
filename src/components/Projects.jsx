@@ -8,7 +8,7 @@ const Projects = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div id="projects" className="relative z-0 flex h-screen w-full flex-col items-center justify-center bg-neutral-900">
+    <div id="projects" className="relative z-0 flex min-h-screen w-full flex-col items-center justify-center bg-neutral-900">
       <div className="relative flex h-4/6 w-3/4 flex-col items-center justify-center ">
         <div className="relative mb-12 font-poppins-extrabold text-4xl text-white">
           My
@@ -16,7 +16,7 @@ const Projects = () => {
             Projects
           </span>
         </div>
-        <div className="relative flex w-full flex-row items-center justify-center">
+        <div className="relative flex w-full lg:flex-row flex-col items-center justify-center">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
@@ -26,7 +26,7 @@ const Projects = () => {
             />
           ))}
         </div>
-        <div className="relative mt-4 box-border flex w-full flex-row-reverse pr-24">
+        <div className="relative mt-4 box-border flex w-full flex-row-reverse lg:pr-24 lg:justify-normal justify-center items-center">
           <PrimaryButton onMouseOver={() => setIsHovered(true)} onMouseOut={() => setIsHovered(false)}>
             <a href="https://github.com/capy-on-caffeine" className="ml-4">Explore Github</a>
             <ChevronRightIcon className={`transition-all ${isHovered ? 'animate-swipe' : ''}`} fontSize="large" />
