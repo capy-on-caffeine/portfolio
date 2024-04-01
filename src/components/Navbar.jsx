@@ -5,6 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import CapyIcon from '/images/capy.png';
 import { Link } from 'react-router-dom';
 import Hyperlink from './utils/Hyperlink';
+import SocialIcon from './utils/SocialIcon';
 
 const Navbar = () => {
   return (
@@ -21,9 +22,9 @@ const Navbar = () => {
             <Hyperlink to={'contact'}>Contact</Hyperlink>
         </div>
         <div className='relative flex flex-row flex-1 justify-center items-center'>
-            <a href='https://github.com/capy-on-caffeine' className="relative items-center justify-center flex mr-6 cursor-pointer"><GitHubIcon /></a>
-            <a href='https://twitter.com/thisis_arnav' className="relative items-center justify-center flex mr-6 cursor-pointer"><XIcon /></a>
-            <a href='https://www.linkedin.com/in/arnav-anand-923232270/' className="relative items-center justify-center flex cursor-pointer"><LinkedInIcon /></a>
+            <SocialIcon href={'https://github.com/capy-on-caffeine'}><GitHubIcon /></SocialIcon>
+            <SocialIcon href={'https://twitter.com/thisis_arnav'}><XIcon /></SocialIcon>
+            <SocialIcon href={'https://www.linkedin.com/in/arnav-anand-923232270/'}><LinkedInIcon /></SocialIcon>
         </div>
     </div>
   )
