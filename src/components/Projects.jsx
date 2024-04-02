@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <div id="projects" className="relative z-0 flex min-h-screen w-full flex-col items-center justify-center bg-neutral-900">
       <div className="relative flex h-4/6 w-3/4 flex-col items-center justify-center ">
-        <div className="relative mb-12 font-poppins-extrabold text-4xl text-white">
+        <div className="relative mb-12 font-poppins-extrabold text-3xl lg:text-4xl text-white">
           My
           <span className="ml-2 bg-gradient-to-b from-darkblue to-lightblue bg-clip-text text-transparent">
             Projects

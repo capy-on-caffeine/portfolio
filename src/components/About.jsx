@@ -3,8 +3,8 @@ import React from 'react'
 const About = () => {
   return (
     <div id='about' className='relative w-full h-screen bg-neutral-900 flex flex-col z-0 justify-center items-center'>
-        <div className="relative flex flex-col justify-center items-center lg:w-6/12 lg:h-4/6 h-screen w-11/12 ">
-            <div className="relative text-4xl text-white font-poppins-extrabold mb-3">
+        <div className="relative flex flex-col justify-center items-center lg:w-6/12 lg:h-4/6 h-screen w-9/12 ">
+            <div className="relative text-3xl lg:text-4xl text-white font-poppins-extrabold mb-3">
                 About
                 <span className='ml-2 text-transparent bg-clip-text bg-gradient-to-b from-darkblue to-lightblue'>Me</span>
             </div>
