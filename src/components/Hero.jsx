@@ -19,7 +19,7 @@ const Hero = () => {
             </div>
             <div className="relative flex md:flex-row flex-col justify-center items-center w-full">
                 <Link to='#contact'><PrimaryButton>Let's talk</PrimaryButton></Link>
-                <a href='#' target='_blank'><SecondaryButton>Download CV</SecondaryButton></a>
+                <a href='https://drive.google.com/drive/u/2/folders/1plPLlLqwnApHwxbm-l1LUCUx6TZkm2b8' target='_blank'><SecondaryButton>Download CV</SecondaryButton></a>
             </div>
         </div>
     </div>
