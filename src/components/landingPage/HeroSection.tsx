@@ -1,4 +1,5 @@
 import React from 'react'
+import WhiteBackgroundButton from '../buttons/WhiteBackgroundButton'
 
 const HeroSection = () => {
   return (
@@ -26,7 +27,8 @@ const HeroSection = () => {
             </div>
 
             <div className='flex gap-12'>
-                
+                <WhiteBackgroundButton>Resume</WhiteBackgroundButton>
+                <WhiteBackgroundButton>Explore</WhiteBackgroundButton>
             </div>
         </div>
     </div>
