@@ -6,7 +6,7 @@ const WhiteBackgroundButton: React.FC<{ children: React.ReactNode }> = ({
 }) => {
   return (
     <Button
-      className="bg-white text-black text-2xl px-16 py-7 rounded-full cursor"
+      className="bg-white text-black text-2xl px-16 py-7 rounded-full cursor hover:bg-gray-300"
       style={{ cursor: "url('/images/cursor.png'), auto" }}
     >
       {children}
